@@ -53,9 +53,9 @@ class MainActivity : AppCompatActivity() {
     fun showDialog(){
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_contacto)
-        val etContacto : EditText = findViewById(R.id.etContacto)
-        val etNumero : EditText = findViewById(R.id.etNumero)
-        val buttonAddContacto : Button = findViewById(R.id.buttonAddContacto)
+        val etContacto : EditText = dialog.findViewById<EditText>(R.id.etContacto)
+        val etNumero : EditText = dialog.findViewById<EditText>(R.id.etNumero)
+        val buttonAddContacto : Button = dialog.findViewById<Button>(R.id.buttonAddContacto)
         buttonAddContacto.setOnClickListener {
             val ContactoActual = etContacto.text.toString()
             val NumeroActual = etNumero.text.toString()

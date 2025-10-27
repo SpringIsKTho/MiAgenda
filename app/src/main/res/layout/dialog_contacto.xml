@@ -10,7 +10,7 @@
         android:id="@+id/etContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Nombre"
+        android:hint="@string/Nombre"
         android:backgroundTint="@color/Background"
         android:textColor="@color/Title_Color"/>
 
@@ -18,7 +18,7 @@
         android:id="@+id/etNumero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Number"
+        android:hint="@string/Number"
         android:backgroundTint="@color/Background"
         android:textColor="@color/Title_Color"/>
 
