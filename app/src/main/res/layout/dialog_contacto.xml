@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/BackgroundLight">
+
+    <EditText
+        android:id="@+id/etContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Nombre"
+        android:backgroundTint="@color/Background"
+        android:textColor="@color/Title_Color"/>
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Number"
+        android:backgroundTint="@color/Background"
+        android:textColor="@color/Title_Color"/>
+
+    <Button
+        android:id="@+id/buttonAddContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Add"
+        android:textColor="@color/Title_Color"
+        android:backgroundTint="@color/Background"/>
+
+</LinearLayout>

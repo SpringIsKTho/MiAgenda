@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -26,7 +26,7 @@
             android:paddingVertical="30dp"
             android:textSize="30sp"
             android:textColor="@color/Title_Color"
-            android:background="@color/Title_Background"/>
+            android:background="@color/Background"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvContactos"
@@ -36,11 +36,15 @@
         </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:layout_gravity="end|bottom"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNuevoContacto"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/outline_add_2_24"
+        android:backgroundTint="@color/Background"/>
 
 
-</LinearLayout>
+</FrameLayout>
