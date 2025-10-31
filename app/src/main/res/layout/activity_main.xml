@@ -36,15 +36,29 @@
         </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end|bottom">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabNuevoContacto"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_gravity="end|bottom"
         android:layout_margin="10dp"
         android:layout_marginRight="15dp"
         android:src="@drawable/outline_add_2_24"
         android:backgroundTint="@color/Background"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCheck"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/outline_bookmark_check_24"
+            android:backgroundTint="@color/Background"/>
+    </LinearLayout>
 
 
 </FrameLayout>

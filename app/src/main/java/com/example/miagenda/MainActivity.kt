@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     )
     lateinit var listadoContactos : RecyclerView
     lateinit var fabNuevoContacto : FloatingActionButton
+    lateinit var fabCheck : FloatingActionButton
 
     lateinit var contactosAdapter : ContactosAdapter
 
@@ -42,11 +43,15 @@ class MainActivity : AppCompatActivity() {
     fun initComponents(){
         listadoContactos = findViewById(R.id.rvContactos)
         fabNuevoContacto = findViewById(R.id.fabNuevoContacto)
+        fabCheck = findViewById(R.id.fabCheck)
     }
 
     fun initListeners(){
         fabNuevoContacto.setOnClickListener {
             showDialog()
+        }
+        fabCheck.setOnClickListener {
+            checkNumber()
         }
     }
 
@@ -70,5 +75,17 @@ class MainActivity : AppCompatActivity() {
 
     fun updateContacto(){
         contactosAdapter.notifyDataSetChanged()
+    }
+
+    fun checkNumber(){
+        for(i in contactos){
+            if (i.telefono.toString().length != 9){
+                i.esCorrecto = false
+            }
+            else{
+                i.esCorrecto = true
+            }
+        }
+        updateContacto()
     }
 }
